@@ -20,16 +20,16 @@ function showTime(e) {
   e.setAttribute("done", "true");
   e.querySelector(".timeline-point").style.background = "blue";
   e.querySelector(".date").style.opacity = "100%";
-  e.querySelector("p").style.opacity = "100%";
-  e.querySelector("p").style.transform = "translateY(0px)";
+  e.querySelector(".timeline-content").style.opacity = "100%";
+  e.querySelector(".timeline-content").style.transform = "translateY(0px)";
 }
 
 function hideTime(e) {
   e.removeAttribute("done");
   e.querySelector(".timeline-point").style.background = "rgb(228, 228, 228)";
   e.querySelector(".date").style.opacity = "0%";
-  e.querySelector("p").style.opacity = "0%";
-  e.querySelector("p").style.transform = "translateY(-10px)";
+  e.querySelector(".timeline-content").style.opacity = "0%";
+  e.querySelector(".timeline-content").style.transform = "translateY(-10px)";
 }
 
 function slowLoop() {
