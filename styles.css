@@ -56,9 +56,13 @@ body {
   background-image: url("/assets/22.png");
   background-repeat: no-repeat;
 }
+
 .item:nth-child(4) {
   top: calc(37% + 180px);
   left: 94%;
+  overflow: hidden;
+  background-image: url("/assets/23.png");
+  background-repeat: no-repeat;
 }
 
 .item .content {
@@ -375,13 +379,117 @@ li p {
   text-align: left;
   padding: 0;
   color: #000000;
-  font-size: 32px;
+  font-size: 36px;
   display: none;
 }
 
 .item:nth-child(2) h3 {
   display: block;
   z-index: 11111;
+}
+
+.right-tar {
+  position: absolute;
+  width: 470px;
+  background-image: url("/assets/avar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 550px;
+  height: 700px;
+  display: none;
+}
+
+.item:nth-child(2) .right-tar {
+  display: block;
+  z-index: 11111;
+}
+
+.left-tar {
+  position: absolute;
+  top: 50%;
+  left: 630px;
+  width: 350px;
+  text-align: left;
+  padding: 0;
+  color: #000000;
+  transform: translate(0, -50%);
+  display: none;
+}
+
+.item:nth-child(2) .left-tar {
+  display: block;
+  z-index: 11111;
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+.perpose h1 {
+  font-size: 24px;
+}
+
+.perpose h2 {
+  font-size: 18px;
+  margin: 5px 0;
+  font-weight: 100;
+}
+
+.right-content-tar {
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  width: 330px;
+  text-align: left;
+  padding: 0;
+  transform: translate(0, -50%);
+  color: #ffffff;
+  display: none;
+}
+
+.item:nth-child(2) .right-content-tar {
+  display: block;
+  z-index: 11111;
+}
+
+.skill-tar h1 {
+  font-size: 24px;
+}
+
+.skill-tar h2 {
+  font-size: 18px;
+  margin: 5px 0;
+  font-weight: 100;
+}
+
+.title-tar {
+  position: absolute;
+  top: 10%;
+  left: 43%;
+  text-align: left;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  z-index: 12111;
+  gap: 15px;
+  display: none;
+}
+
+.item:nth-child(2) .title-tar {
+  display: flex;
+}
+
+.title-tar h1 {
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.title-tar h2 {
+  color: #000000;
+  font-size: 36px;
 }
 
 @media screen and (min-width: 728px) {
@@ -440,5 +548,11 @@ li p {
 
     transition: 1s linear;
     border-radius: 999px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .item {
+    display: none;
   }
 }
