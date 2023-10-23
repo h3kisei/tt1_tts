@@ -806,15 +806,14 @@ li p {
 @media screen and (max-width: 469px) {
   body {
     overflow: unset;
-    background-image: url("/assets/h1.png");
-    padding-bottom: 50px;
+    background-image: url("/assets/ava3.png");
   }
 
   .buttons {
     position: fixed;
-    left: 15px;
-    right: 15px;
-    bottom: 400px;
+    left: 2px;
+    right: 2px;
+    bottom: 450px;
     justify-content: space-between;
     width: unset;
   }
@@ -826,7 +825,8 @@ li p {
 
   #slide {
     padding: 20px;
-    width: 420px;
+    width: 340px;
+    top: 43%;
   }
 
   .item:nth-child(3) {
@@ -853,7 +853,7 @@ li p {
   .item .title {
     position: absolute;
     top: 20%;
-    left: 30%;
+    left: 20%;
     width: fit-content;
     text-align: left;
     padding: 0;
@@ -869,13 +869,13 @@ li p {
   }
 
   .item .content {
-    left: 30%;
+    left: 20%;
   }
 
   .left {
     top: 50%;
-    left: 50px;
-    width: 350px;
+    left: 35px;
+    width: 310px;
   }
 
   .social {
@@ -885,13 +885,14 @@ li p {
   .right {
     top: 100%;
     left: 0px;
-    width: 460px;
+    width: 380px;
     height: 640px;
     display: none;
   }
 
   .right-content {
-    left: 50px;
+    left: 35px;
+    width: 310px;
   }
 
   .item:nth-child(2) .right {
@@ -900,12 +901,16 @@ li p {
   }
 
   .left-tar {
-    left: 50px;
+    left: 35px;
+  }
+
+  .perpose {
+    width: 310px;
   }
 
   .right-tar {
     display: none;
-    width: 460px;
+    width: 380px;
     top: 100%;
     height: 640px;
   }
@@ -920,13 +925,13 @@ li p {
   }
 
   .right-content-tar {
-    left: 50px;
+    left: 35px;
   }
 
   .timeline-content {
     width: 240px;
     padding: 10px;
-    left: 70px;
+    left: 50px;
   }
 
   ul {
@@ -939,14 +944,14 @@ li p {
   }
 
   .timeline-point {
-    left: 50px;
+    left: 25px;
     top: 35px;
   }
 
   .item .timeline {
     top: 18%;
     margin-top: 0;
-    left: 13%;
+    left: 0;
   }
 
   .item h3 {
@@ -956,9 +961,9 @@ li p {
   }
 
   .date {
-    top: 30px;
+    top: 11px;
     font-size: 16px;
-    left: -35px;
+    left: 220px;
   }
 
   .timeline-content h1 {
