@@ -45,7 +45,7 @@ function slowLoop() {
 
 function timelineProgress(value) {
   let progress = `${(value / timeline_events.length) * 100}%`;
-  if (window.matchMedia("(min-width: 728px)").matches) {
+  if (window.matchMedia("(min-width: 870px)").matches) {
     line.style.width = progress;
     line.style.height = "4px";
   } else {
@@ -58,7 +58,7 @@ let observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.intersectionRatio > 0.9) {
-        if (window.matchMedia("(min-width: 728px)").matches) {
+        if (window.matchMedia("(min-width: 870px)").matches) {
           slowLoop();
         } else {
           showTime(entry.target);
@@ -72,36 +72,13 @@ let observer = new IntersectionObserver(
   { threshold: 1, rootMargin: "0px 0px -50px 0px" }
 );
 
-if (window.matchMedia("(min-width: 728px)").matches) {
+if (window.matchMedia("(min-width: 870px)").matches) {
   observer.observe(target1);
 } else {
   target2.forEach((t) => {
     observer.observe(t);
   });
 }
-
-timeline_events.forEach((li, index) => {
-  li.addEventListener("click", () => {
-    if (li.getAttribute("done")) {
-      timelineProgress(index);
-
-      // hide all timeline events from last upto the point clicked
-      timeline_events.forEach((ev, idx) => {
-        if (idx >= index) {
-          hideTime(ev);
-        }
-      });
-    } else {
-      timelineProgress(index + 1);
-      // show all timeline events from first upto the point clicked
-      timeline_events.forEach((ev, idx) => {
-        if (idx <= index) {
-          showTime(ev);
-        }
-      });
-    }
-  });
-});
 
 var doit;
 window.addEventListener("resize", () => {
