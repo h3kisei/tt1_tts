@@ -645,6 +645,7 @@ li p {
   #slide {
     padding: 20px;
     width: 420px;
+    height: 700px;
   }
 
   .item:nth-child(3) {
@@ -712,9 +713,17 @@ li p {
     left: 50px;
   }
 
+  .perpose h1 {
+    font-size: 22px;
+  }
+
   .item:nth-child(2) .right {
     display: block;
     z-index: 11111;
+  }
+
+  .skill-tar h1 {
+    font-size: 22px;
   }
 
   .left-tar {
@@ -826,7 +835,8 @@ li p {
   #slide {
     padding: 20px;
     width: 340px;
-    top: 43%;
+    top: 50%;
+    height: 720px;
   }
 
   .item:nth-child(3) {
@@ -853,7 +863,7 @@ li p {
   .item .title {
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 23%;
     width: fit-content;
     text-align: left;
     padding: 0;
@@ -869,7 +879,7 @@ li p {
   }
 
   .item .content {
-    left: 20%;
+    left: 23%;
   }
 
   .left {
