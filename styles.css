@@ -268,9 +268,10 @@ body {
 }
 .timeline-line {
   background: rgb(228, 228, 228);
-  width: 4px;
+  width: 3px;
   border-radius: 12px;
-  position: relative;
+  position: absolute;
+  height: 96%;
   justify-self: end;
 }
 
@@ -280,8 +281,8 @@ body {
 
   border-radius: 50%;
   background: rgb(228, 228, 228);
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 
   top: 30px;
   left: -6px;
@@ -290,7 +291,7 @@ body {
 .timeline-innerline {
   position: absolute;
   background: blue;
-  width: 4px;
+  width: 3px;
   height: 0%;
 
   top: 0%;
@@ -499,7 +500,6 @@ li p {
   li p {
     transform: translateY(-10px);
     opacity: 0;
-    /* padding: 0 20px; */
     transition: 1.5s;
   }
 
@@ -518,13 +518,13 @@ li p {
     width: 15px;
     height: 15px;
 
-    top: -40px;
+    top: -36px;
     left: 40%;
     transition: 1.5s ease;
   }
 
   .timeline-line {
-    width: 100%;
+    width: 96%;
     height: 4px;
   }
 
@@ -532,7 +532,7 @@ li p {
     position: absolute;
     background: blue;
     width: 0%;
-    height: 4px;
+    height: 3px;
 
     top: 0%;
     left: 0%;
@@ -544,8 +544,8 @@ li p {
 
 @media screen and (min-width: 870px) and (max-width: 1439px) {
   .buttons {
-    left: 44%;
-    gap: 18px;
+    left: 44.5%;
+    gap: 20px;
   }
   .item:nth-child(3) {
     display: none;
@@ -758,10 +758,6 @@ li p {
 
   ul {
     gap: 20px;
-    width: 2px;
-    gap: 20px;
-    position: relative;
-    background: blue;
   }
 
   li {
@@ -950,10 +946,6 @@ li p {
 
   ul {
     gap: 20px;
-    width: 2px;
-    gap: 20px;
-    position: relative;
-    background: blue;
   }
 
   li {
