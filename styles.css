@@ -544,7 +544,7 @@ li p {
 
 @media screen and (min-width: 870px) and (max-width: 1439px) {
   .buttons {
-    left: 45%;
+    left: 44%;
     gap: 18px;
   }
   .item:nth-child(3) {
@@ -753,11 +753,15 @@ li p {
   .timeline-content {
     width: 240px;
     padding: 10px;
-    left: 70px;
+    left: 20px;
   }
 
   ul {
     gap: 20px;
+    width: 2px;
+    gap: 20px;
+    position: relative;
+    background: blue;
   }
 
   li {
@@ -766,14 +770,14 @@ li p {
   }
 
   .timeline-point {
-    left: 50px;
+    left: -3px;
     top: 35px;
   }
 
   .item .timeline {
     top: 18%;
     margin-top: 0;
-    left: 13%;
+    left: 25%;
   }
 
   .item h3 {
@@ -785,7 +789,7 @@ li p {
   .date {
     top: 30px;
     font-size: 16px;
-    left: -35px;
+    left: -90px;
   }
 
   .timeline-content h1 {
@@ -822,7 +826,7 @@ li p {
     position: fixed;
     left: 2px;
     right: 2px;
-    bottom: 450px;
+    bottom: 400px;
     justify-content: space-between;
     width: unset;
   }
@@ -946,7 +950,7 @@ li p {
 
   ul {
     gap: 20px;
-    width: 3px;
+    width: 2px;
     gap: 20px;
     position: relative;
     background: blue;
@@ -958,7 +962,7 @@ li p {
   }
 
   .timeline-point {
-    left: -2px;
+    left: -3px;
     top: 35px;
   }
 
@@ -977,7 +981,7 @@ li p {
   .date {
     top: 11px;
     font-size: 16px;
-    left: 190px;
+    left: 182px;
   }
 
   .timeline-content h1 {
