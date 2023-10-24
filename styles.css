@@ -941,11 +941,15 @@ li p {
   .timeline-content {
     width: 240px;
     padding: 10px;
-    left: 50px;
+    left: 20px;
   }
 
   ul {
     gap: 20px;
+    width: 3px;
+    gap: 20px;
+    position: relative;
+    background: blue;
   }
 
   li {
@@ -954,14 +958,14 @@ li p {
   }
 
   .timeline-point {
-    left: 25px;
+    left: -2px;
     top: 35px;
   }
 
   .item .timeline {
     top: 18%;
     margin-top: 0;
-    left: 0;
+    left: 8%;
   }
 
   .item h3 {
@@ -973,7 +977,7 @@ li p {
   .date {
     top: 11px;
     font-size: 16px;
-    left: 220px;
+    left: 190px;
   }
 
   .timeline-content h1 {
