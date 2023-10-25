@@ -1,9 +1,10 @@
 body {
   overflow: hidden;
-  background-image: url("/assets/h.png");
+  background-image: url("/tt1/assets/h.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 900px;
+  font-family: "Bookerly", sans-serif;
 }
 
 .root {
@@ -34,7 +35,7 @@ body {
   top: 50%;
   transform: translate(0, -50%);
   border-radius: 20px;
-  box-shadow: 0 30px 50px #505050;
+  box-shadow: 0 10px 20px #666666;
 }
 
 .item:nth-child(1),
@@ -51,16 +52,16 @@ body {
   left: 94%;
   top: 37%;
   overflow: hidden;
-  background-image: url("/assets/22.png");
+  background-image: url("/tt1/assets/22.png");
   background-repeat: no-repeat;
+  display: none;
 }
 
 .item:nth-child(4) {
   top: calc(37% + 180px);
   left: 94%;
   overflow: hidden;
-  background-image: url("/assets/23.png");
-  background-repeat: no-repeat;
+  display: none;
 }
 
 .item .content {
@@ -102,6 +103,7 @@ body {
     filter: blur(0);
   }
 }
+
 .buttons {
   position: absolute;
   bottom: 55px;
@@ -159,7 +161,7 @@ body {
 
 .left {
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 80px;
   width: 390px;
   text-align: left;
@@ -192,6 +194,7 @@ body {
 
 .person h2 {
   font-size: 18px;
+  line-height: 1.5;
   margin: 5px 0;
   font-weight: 100;
 }
@@ -210,12 +213,13 @@ body {
   font-size: 18px;
   margin: 5px 0;
   font-weight: 100;
+  line-height: 1.5;
 }
 
 .social {
   display: flex;
   gap: 10px;
-  margin-top: 120px;
+  margin-top: 50px;
 }
 
 .social i {
@@ -226,7 +230,7 @@ body {
   position: absolute;
   left: 550px;
   width: 470px;
-  background-image: url("/assets/aval.png");
+  background-image: url("/tt1/assets/aval.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 550px;
@@ -235,7 +239,7 @@ body {
 
 .right-content {
   position: absolute;
-  top: 30%;
+  top: 28%;
   left: 80px;
   width: 330px;
   text-align: left;
@@ -271,19 +275,16 @@ body {
   width: 3px;
   border-radius: 12px;
   position: absolute;
-  height: 96%;
   justify-self: end;
 }
 
 .timeline-point {
   border: none;
   position: absolute;
-
   border-radius: 50%;
   background: rgb(228, 228, 228);
   width: 10px;
   height: 10px;
-
   top: 30px;
   left: -6px;
   transition: 1.5s ease;
@@ -293,16 +294,12 @@ body {
   background: blue;
   width: 3px;
   height: 0%;
-
   top: 0%;
   left: 0%;
-
   transition: 1s linear;
 }
 
 .item .timeline {
-  margin-top: 35px;
-  padding: 15px;
   display: grid;
   grid-template-columns: 40% auto;
   justify-content: center;
@@ -310,6 +307,10 @@ body {
   display: none;
   top: 30%;
   left: 8%;
+  height: 520px;
+  overflow-y: auto;
+  padding-left: 5px;
+  width: 85%;
 }
 
 .item:nth-child(2) .timeline {
@@ -318,13 +319,12 @@ body {
 }
 
 ul {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
   padding: 0;
-  gap: 40px;
+  gap: 30px;
 }
 li {
   margin-top: 30px;
@@ -337,7 +337,7 @@ li p {
 }
 
 .timeline-content {
-  width: 160px;
+  width: 150px;
   height: fit-content;
   transition: 1.5s;
   position: relative;
@@ -350,17 +350,18 @@ li p {
 .timeline-content h1 {
   font-size: 20px;
   margin-top: 0px;
+  font-weight: 600;
 }
 
 .timeline-content h2 {
   font-size: 18px;
   font-weight: 500;
+  line-height: 1.5;
 }
 
 .timeline-content a {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  line-height: 1.5;
 }
 
 .item h3 {
@@ -383,7 +384,7 @@ li p {
 .right-tar {
   position: absolute;
   width: 470px;
-  background-image: url("/assets/avar.png");
+  background-image: url("/tt1/assets/avar.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 550px;
@@ -398,9 +399,9 @@ li p {
 
 .left-tar {
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 630px;
-  width: 350px;
+  width: 380px;
   text-align: left;
   padding: 0;
   color: #000000;
@@ -428,13 +429,14 @@ li p {
   font-size: 18px;
   margin: 5px 0;
   font-weight: 100;
+  line-height: 1.5;
 }
 
 .right-content-tar {
   position: absolute;
   top: 50%;
   left: 80px;
-  width: 330px;
+  width: 380px;
   text-align: left;
   padding: 0;
   transform: translate(0, -50%);
@@ -460,7 +462,7 @@ li p {
 .title-tar {
   position: absolute;
   top: 10%;
-  left: 43%;
+  left: 42.5%;
   text-align: left;
   padding: 0;
   display: flex;
@@ -490,6 +492,8 @@ li p {
   }
   ul {
     flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   li {
     margin-top: 0px;
@@ -507,24 +511,22 @@ li p {
     opacity: 0;
     transition: 1.5s;
     font-size: 12px;
-
     position: absolute;
     top: -70px;
-    left: 28%;
+    left: 18%;
     font-size: 18px;
   }
 
   .timeline-point {
     width: 15px;
     height: 15px;
-
     top: -36px;
     left: 40%;
     transition: 1.5s ease;
   }
 
   .timeline-line {
-    width: 96%;
+    width: 345%;
     height: 4px;
   }
 
@@ -539,6 +541,41 @@ li p {
 
     transition: 1s linear;
     border-radius: 999px;
+  }
+
+  .item .timeline {
+    width: 900px;
+    overflow-x: auto;
+    height: fit-content;
+    padding-top: 40px;
+  }
+
+  .timeline::-webkit-scrollbar {
+    height: 12px;
+  }
+
+  .timeline::-webkit-scrollbar-thumb {
+    background-color: rgba(122, 26, 26, 0.7);
+    border-radius: 4px;
+  }
+
+  .timeline::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+    background: radial-gradient(circle at 14px 18px, white 5px, transparent 7px)
+        no-repeat,
+      radial-gradient(
+          circle at 14px calc(100% - 18px),
+          white 5px,
+          transparent 7px
+        )
+        no-repeat,
+      linear-gradient(white, white) center no-repeat;
+    border-radius: 2px;
+  }
+
+  .timeline-content {
+    width: 210px;
+    padding: 10px;
   }
 }
 
@@ -570,14 +607,14 @@ li p {
   }
 
   .left {
-    left: 50px;
-    width: 320px;
+    left: 40px;
+    width: 340px;
   }
 
   .right-content {
-    top: 26%;
+    top: 27%;
     left: 50px;
-    width: 320px;
+    width: 340px;
   }
 
   .right-tar {
@@ -592,20 +629,25 @@ li p {
   .right-content-tar {
     top: 48%;
     left: 50px;
-    width: 320px;
+    width: 340px;
   }
 
   .title-tar {
-    left: 41%;
+    left: 40%;
   }
 
   .timeline-content {
-    width: 160px;
+    width: 210px;
     padding: 10px;
   }
 
   .item .timeline {
-    left: 2%;
+    left: 7%;
+    width: 720px;
+  }
+
+  .item h3 {
+    left: 13%;
   }
 
   ul {
@@ -619,12 +661,16 @@ li p {
   .date {
     left: 24%;
   }
+
+  .person h2 {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 470px) and (max-width: 869px) {
   body {
     overflow: unset;
-    background-image: url("/assets/h1.png");
+    background-image: url("/tt1/assets/h1.png");
     padding-bottom: 50px;
   }
 
@@ -672,7 +718,7 @@ li p {
   .item .title {
     position: absolute;
     top: 20%;
-    left: 30%;
+    left: 27%;
     width: fit-content;
     text-align: left;
     padding: 0;
@@ -688,7 +734,7 @@ li p {
   }
 
   .item .content {
-    left: 30%;
+    left: 25%;
   }
 
   .left {
@@ -698,7 +744,7 @@ li p {
   }
 
   .social {
-    margin-top: 80px;
+    margin-top: 60px;
   }
 
   .right {
@@ -711,6 +757,7 @@ li p {
 
   .right-content {
     left: 50px;
+    top: 30%;
   }
 
   .perpose h1 {
@@ -743,7 +790,7 @@ li p {
 
   .title-tar {
     gap: 10px;
-    left: 40%;
+    left: 37%;
   }
 
   .right-content-tar {
@@ -751,13 +798,14 @@ li p {
   }
 
   .timeline-content {
-    width: 240px;
+    width: 290px;
     padding: 10px;
     left: 20px;
   }
 
   ul {
     gap: 20px;
+    margin: 0;
   }
 
   li {
@@ -771,21 +819,25 @@ li p {
   }
 
   .item .timeline {
-    top: 18%;
+    top: 21%;
     margin-top: 0;
-    left: 25%;
+    left: 12%;
+  }
+
+  .timeline-line {
+    height: 234%;
   }
 
   .item h3 {
     top: 8%;
-    left: 25%;
+    left: 22%;
     font-size: 28px;
   }
 
   .date {
-    top: 30px;
+    top: 11px;
     font-size: 16px;
-    left: -90px;
+    left: 182px;
   }
 
   .timeline-content h1 {
@@ -815,7 +867,7 @@ li p {
 @media screen and (max-width: 469px) {
   body {
     overflow: unset;
-    background-image: url("/assets/ava3.png");
+    background-image: url("/tt1/assets/ava3.png");
   }
 
   .buttons {
@@ -863,7 +915,7 @@ li p {
   .item .title {
     position: absolute;
     top: 20%;
-    left: 23%;
+    left: 20%;
     width: fit-content;
     text-align: left;
     padding: 0;
@@ -879,7 +931,7 @@ li p {
   }
 
   .item .content {
-    left: 23%;
+    left: 20%;
   }
 
   .left {
@@ -889,7 +941,7 @@ li p {
   }
 
   .social {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 
   .right {
@@ -903,6 +955,7 @@ li p {
   .right-content {
     left: 35px;
     width: 310px;
+    top: 30%;
   }
 
   .item:nth-child(2) .right {
@@ -931,21 +984,27 @@ li p {
 
   .title-tar {
     gap: 10px;
-    left: 40%;
+    left: 37%;
   }
 
   .right-content-tar {
     left: 35px;
+    width: 250px;
+  }
+
+  .skill-tar h2 {
+    line-height: 1.5;
   }
 
   .timeline-content {
-    width: 240px;
+    width: 260px;
     padding: 10px;
     left: 20px;
   }
 
   ul {
     gap: 20px;
+    margin: 0;
   }
 
   li {
@@ -959,14 +1018,14 @@ li p {
   }
 
   .item .timeline {
-    top: 18%;
+    top: 20%;
     margin-top: 0;
     left: 8%;
   }
 
   .item h3 {
-    top: 8%;
-    left: 25%;
+    top: 5%;
+    left: 15%;
     font-size: 28px;
   }
 
@@ -997,5 +1056,13 @@ li p {
 
   .title-tar h2 {
     font-size: 28px;
+  }
+
+  .timeline-line {
+    height: 245%;
+  }
+
+  .person h2 {
+    margin: 0;
   }
 }
